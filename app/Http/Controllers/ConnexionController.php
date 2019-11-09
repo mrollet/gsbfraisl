@@ -8,7 +8,8 @@ use App\metier\GsbFrais;
 class ConnexionController extends Controller
 {
     /**
-     * Authentifie le visiteur
+     * Authentifie le visiteur 
+     * @param $request : objet request avec login et mdp
      * @return type Vue formLogin ou home
      */
     public function logIn(Request $request) {

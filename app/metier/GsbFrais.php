@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
  */
 class GsbFrais{   		
 /**
- * Retourne les informations d'un visiteur
+ * Retourne les informations d'un visiteur 
  
  * @param $login 
  * @param $mdp
