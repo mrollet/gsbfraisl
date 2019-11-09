@@ -30,8 +30,9 @@ class VoirFraisController extends Controller
         $id_visiteur = Session::get('id');
         // On récupère la liste de tous les frais sur une année glissante
         $mesFrais = $unFrais->getLesFrais($id_visiteur, $mois);
-        // On affiche la liste de ces frais       
-        return view('listeFrais', compact('mesFrais'));
+        // On affiche la liste de ces frais  
+        $titreVue = "Liste de mes frais annuels";     
+        return view('listeFrais', compact('mesFrais', 'titreVue'));
     }
   /**
      * Affiche le détail (frais forfait et hors forfait)

@@ -3,7 +3,7 @@
 <div class="container">
     <div class="col-md-8 col-sm-8">
         <div class="blanc">
-            <h1>{{$titreVue or ''}}</h1>
+            <h2>{{$titreVue or ''}}</h2>
         </div>
         <h3>Liste des frais forfait</h3>
         <table class="table table-bordered table-striped table-responsive">
