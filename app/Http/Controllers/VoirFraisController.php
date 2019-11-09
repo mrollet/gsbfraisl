@@ -48,6 +48,7 @@ class VoirFraisController extends Controller
             $montantTotal = $montantTotal + $fhf->montant;
       }
       $titreVue = "Détail de la fiche de frais du mois ".$mois;
-      return view('listeDetailFiche', compact('lesFraisForfait', 'lesFraisHorsForfait', 'mois', 'titreVue','montantTotal'));
+      $retour = "/getListeFrais";
+      return view('listeDetailFiche', compact('lesFraisForfait', 'lesFraisHorsForfait', 'mois', 'titreVue','montantTotal', 'retour'));
   }
 }
